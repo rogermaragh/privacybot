@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import Modal from '../utils/Modal';
+import React from 'react';
 
 function HeroHome() {
 
-    const [videoModalOpen, setVideoModalOpen] = useState(false);
 
     return (
         <section>

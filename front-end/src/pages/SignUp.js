@@ -45,7 +45,7 @@ function SignUp() {
                 </form>*/}
                                 <div className="flex items-center my-6">
                                     <div className="border-t border-gray-700 border-dotted flex-grow mr-3" aria-hidden="true"></div>
-                                    <div className="text-gray-400"><a href='https://privacybot.io' target="_blank"><u>Why do I need to enter this?</u></a></div>
+                                    <div className="text-gray-400"><a href='https://privacybot.io' target="_blank" rel="noopener noreferrer"><u>Why do I need to enter this?</u></a></div>
                                     <div className="border-t border-gray-700 border-dotted flex-grow ml-3" aria-hidden="true"></div>
                                 </div>
                                 <form action="/about">
@@ -123,7 +123,7 @@ function SignUp() {
                                     </div>
                                     <div className="flex flex-wrap -mx-3 mb-4">
                                         <div className="w-full px-3">
-                                            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Device Ad ID">Device Ad ID <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.adcolony.com/privacy-policy/finding-advertising-id/" target="_blank">What is this?</a></label>
+                                            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Device Ad ID">Device Ad ID <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.adcolony.com/privacy-policy/finding-advertising-id/" target="_blank" rel="noopener noreferrer">What is this?</a></label>
                                             <input id="device ad id" type="device ad id" className="form-input w-full text-gray-300" placeholder="6GF-443-E21" />
                                         </div>
                                     </div>

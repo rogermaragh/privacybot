@@ -61,7 +61,6 @@ class InputForm extends React.Component {
         const {
             firstname,
             lastname,
-            mail,
             full_address,
             city,
             state,
@@ -73,8 +72,7 @@ class InputForm extends React.Component {
             phone_num,
             cc_last4,
             device_ad_id,
-            twitter_handle,
-            usrchoice
+            twitter_handle
         } = this.state
         return (
             <div className="flex flex-col min-h-screen overflow-hidden">
@@ -98,7 +96,7 @@ class InputForm extends React.Component {
                                     <div className="max-w-sm mx-auto">
                                         <div className="flex max-w-sm items-center my-6">
                                             <div className="border-t border-gray-700 border-dotted flex-grow mr-3" aria-hidden="true"></div>
-                                            <div className="text-gray-400 hover:text-gray-100"><a href='https://privacybot.io/FAQ' target="_blank">Why do I need to enter this info?</a></div>
+                                            <div className="text-gray-400 hover:text-gray-100"><a href='https://privacybot.io/FAQ' target="_blank" rel="noopener noreferrer">Why do I need to enter this info?</a></div>
                                             <div className="border-t border-gray-700 border-dotted flex-grow ml-3" aria-hidden="true"></div>
                                         </div>
                                     </div>
@@ -136,7 +134,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Street Address">Street Address </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">32% of companies on our list need your street address. They likely use it in compiling location or socioeconomic data. </p>
                                                             </Dropdown>
                                                         </li>
@@ -152,7 +150,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="City of residence">City of Residence </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">37% of companies on our list need your city of residence. They likely use it in compiling location or socioeconomic data.</p>
                                                             </Dropdown>
                                                         </li>
@@ -176,7 +174,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Zip Code">Zip Code </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">36% of companies on our list need your zip code. They likely use it in compiling location or socioeconomic data.</p>
                                                             </Dropdown>
                                                         </li>
@@ -193,7 +191,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Country">Country </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">72% of companies on our list need your country of residence. They likely use it in compiling location or socioeconomic data.</p>
                                                             </Dropdown>
                                                         </li>
@@ -210,7 +208,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Date of Birth">Date of Birth </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">7% of companies on our list need your date of birth. They likely use it in verifying identity for people searchers.</p>
                                                             </Dropdown>
                                                         </li>
@@ -227,7 +225,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Age">Age </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">4% of companies on our list need your age. They likely use it in verifying identity for people searchers.</p>
                                                             </Dropdown>
                                                         </li>
@@ -244,7 +242,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Phone Number">Phone Number </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">20% of companies on our list need your phone number. They likely use it in verifying identity or selling phone data.</p>
                                                             </Dropdown>
                                                         </li>
@@ -261,7 +259,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Last 4 Digits of Credit Card Number">Last 4 Digits of Credit Card Number </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">0.5% of companies on our list need the last 4 digits of your credit card number. They likely use it to cross-reference with credit agencies.</p>
                                                             </Dropdown>
                                                         </li>
@@ -273,7 +271,7 @@ class InputForm extends React.Component {
                                             {/* device_ad_id */}
                                             <div className="flex max-w-sm flex-wrap -mx-3 mb-4">
                                                 <div className="w-full px-3">
-                                                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Device Ad ID">Device Ad ID <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.adcolony.com/privacy-policy/finding-advertising-id/" target="_blank">What is this?</a></label>
+                                                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Device Ad ID">Device Ad ID <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://www.adcolony.com/privacy-policy/finding-advertising-id/" target="_blank" rel="noopener noreferrer">What is this?</a></label>
                                                     <input name="device_ad_id" value={device_ad_id} onChange={this.handleInputChange} id="device ad id" type="device ad id" className="form-input w-full text-gray-300" placeholder="6GF-443-E21" />
                                                 </div>
                                             </div>
@@ -285,7 +283,7 @@ class InputForm extends React.Component {
                                                             <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="Twitter Handle">Twitter </label>
                                                         </li>
                                                         <li>
-                                                            <Dropdown title="&#9432;" style="display: none;">
+                                                            <Dropdown title="&#9432;">
                                                                 <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">0.2% of companies on our list need your twitter handle. They likely sell it in combination with other mobile phone data or to use as identity verification.</p>
                                                             </Dropdown>
                                                         </li>
@@ -341,7 +339,7 @@ class InputForm extends React.Component {
                                                         <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                                         </svg>
-                                                        <span> <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank"> 91 companies in total</a></span>
+                                                        <span> <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> 91 companies in total</a></span>
                                                     </li>
                                                     {/* <li className="flex items-center mb-3">
                             <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -397,7 +395,7 @@ class InputForm extends React.Component {
                                                         <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                                         </svg>
-                                                        <span><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank"> 164 companies in total</a></span>
+                                                        <span><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> 164 companies in total</a></span>
                                                     </li>
                                                     {/* <li className="flex items-center mb-3">
                             <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -435,7 +433,7 @@ class InputForm extends React.Component {
                                                         <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                                                         </svg>
-                                                        <span><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank"> Every service on our list </a></span>
+                                                        <span><a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="https://docs.google.com/spreadsheets/d/1R3wfIxEH0v_gmjBBXYP6FZcwA03dqPAXkN_52m59pOg/edit?usp=sharing" target="_blank" rel="noopener noreferrer"> Every service on our list </a></span>
                                                     </li>
                                                     <li className="flex items-center mb-3">
                                                         <svg className="w-3 h-3 fill-current text-green-500 mr-3 flex-shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -469,7 +467,7 @@ class InputForm extends React.Component {
                             </label>
                           </li>
                           <li>
-                            <Dropdown title="&#9432;" style="display: none;">
+                            <Dropdown title="&#9432;">
                               <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">This selection includes only the 20 largest people search sites and data brokers.</p>
                             </Dropdown>
                           </li>
@@ -486,7 +484,7 @@ class InputForm extends React.Component {
                             </label>
                           </li>
                           <li>
-                            <Dropdown title="&#9432;" style="display: none;">
+                            <Dropdown title="&#9432;">
                               <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">Remove your data from companies that scrape public government records and sell it to other people or companies who want information on you specifically.</p>
                             </Dropdown>
                           </li>
@@ -511,7 +509,7 @@ class InputForm extends React.Component {
                             </label>
                           </li>
                           <li>
-                            <Dropdown title="&#9432;" style="display: none;">
+                            <Dropdown title="&#9432;">
                               <p className="block text-gray-300 text-sm font-medium py-2 px-4 leading-tight">This is a list of 500+ data brokers, which may require a significant amount of follow up.</p>
                             </Dropdown>
                           </li>
@@ -527,7 +525,7 @@ class InputForm extends React.Component {
                                                 </div>
                                             </div>
                                             <div className="text-sm text-gray-500 text-center">
-                                                This is run entirely locally, we don't have access to this data. Here's our <a href="https://privacybot.io/privacypolicy" target="_blank"> privacy policy</a>.
+                                                This is run entirely locally, we don't have access to this data. Here's our <a href="https://privacybot.io/privacypolicy" target="_blank" rel="noopener noreferrer"> privacy policy</a>.
                                             </div>
                                         </div>
                                     </form>

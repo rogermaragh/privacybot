@@ -4,7 +4,6 @@ import Header from '../partials/Header';
 import PageIllustration from '../partials/PageIllustration';
 import Cta from '../partials/Cta';
 import Process from '../partials/Process';
-import Footer from '../partials/Footer';
 
 function About() {
     return (
